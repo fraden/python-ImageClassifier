@@ -41,7 +41,7 @@ def process_image(image: np.ndarray) -> np.ndarray:
 def predict(image_path: str, model, top_k: int, category_names: str) -> Tuple[
         List[float], Tuple[Union[List[int], List[str]]]]:
     """
-
+    Predicts the name of a flower by using an image of the specific flower.
     Args:
         image_path (str): path to the image
         model: tensorflow model that should be used for prediction
@@ -49,7 +49,8 @@ def predict(image_path: str, model, top_k: int, category_names: str) -> Tuple[
         category_names: Path to a JSON file mapping labels to flower names
 
     Returns:
-
+        Tuple[List[float], Tuple[Union[List[int], List[str]]]]: List containing either the number of the classes or
+            their names.
     """
     image = np.asarray(Image.open(image_path))
     image = process_image(image)
