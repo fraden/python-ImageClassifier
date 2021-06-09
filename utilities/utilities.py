@@ -1,10 +1,12 @@
 import json
-from PIL import Image
-from config import config
 from typing import Tuple, Union, List
 
+from PIL import Image
 import numpy as np
 import tensorflow as tf
+
+from config import config
+
 
 IMG_SHAPE = config['IMG_SHAPE']
 
