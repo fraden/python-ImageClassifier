@@ -1,5 +1,5 @@
 
-# python-ImageClassifier-python-ImageClassifier-CL-Uda
+# python-ImageClassifier
 ## Introduction
 This repository includes my jupyter notebook (in assets) to develop the Image Classifier
 using a Neural Network.
